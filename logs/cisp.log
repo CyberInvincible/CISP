@@ -1,0 +1,3 @@
+2026-07-05 19:51:27,391 | INFO | CISP Logger initialized successfully.
+2026-07-05 19:51:27,391 | WARNING | This is a sample warning.
+2026-07-05 19:51:27,391 | ERROR | This is a sample error.
