@@ -1,4 +1,4 @@
-from core.logger import Logger
+from cisp.core.logger import Logger
 
 logger = Logger.get_logger()
 

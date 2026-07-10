@@ -1,0 +1,41 @@
+quick:
+  description: Quick web reconnaissance
+
+  modules:
+    - HTTP Methods Scanner
+    - Security Headers Analyzer
+    - Technology Detection
+    - Robots Analyzer
+
+web:
+  description: Complete web assessment
+
+  modules:
+    - HTTP Methods Scanner
+    - Security Headers Analyzer
+    - Technology Detection
+    - Robots Analyzer
+    - Directory Bruteforcer
+
+infrastructure:
+  description: Infrastructure reconnaissance
+
+  modules:
+    - WHOIS Lookup
+    - DNS Lookup
+    - Port Scanner
+    - SSL Scanner
+
+full:
+  description: Complete CISP assessment
+
+  modules:
+    - WHOIS Lookup
+    - DNS Lookup
+    - Port Scanner
+    - SSL Scanner
+    - HTTP Methods Scanner
+    - Security Headers Analyzer
+    - Technology Detection
+    - Robots Analyzer
+    - Directory Bruteforcer

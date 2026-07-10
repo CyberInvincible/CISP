@@ -1,0 +1,15 @@
+admin
+login
+administrator
+dashboard
+backup
+uploads
+images
+css
+js
+api
+config
+.git
+.env
+robots.txt
+sitemap.xml

@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# ==============================================================================
+# Project Metadata
+# ==============================================================================
+
+[project]
+name = "cisp"
+version = "0.1.0"
+description = "CyberInvincible Security Platform"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Rudra Rawat" }
+]
+
+keywords = [
+    "cybersecurity",
+    "security",
+    "vulnerability",
+    "scanner",
+    "recon",
+    "pentest",
+    "automation"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "python-whois"
+]
+
+# ==============================================================================
+# Console Command
+# ==============================================================================
+
+[project.scripts]
+cisp = "cisp.main:main"
+
+# ==============================================================================
+# Package Discovery
+# ==============================================================================
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ==============================================================================
+# Pytest Configuration
+# ==============================================================================
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

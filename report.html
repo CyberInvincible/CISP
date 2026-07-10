@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>CISP Report</title>
+
+<style>
+
+body{
+
+margin:0;
+
+font-family:Segoe UI;
+
+background:#f2f5f8;
+
+}
+
+header{
+
+background:#0d47a1;
+
+padding:25px;
+
+color:white;
+
+}
+
+.container{
+
+padding:30px;
+
+}
+
+.cards{
+
+display:flex;
+
+gap:20px;
+
+margin-bottom:30px;
+
+}
+
+.card{
+
+flex:1;
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 4px 15px rgba(0,0,0,.1);
+
+text-align:center;
+
+}
+
+.green{
+
+border-top:5px solid #43a047;
+
+}
+
+.red{
+
+border-top:5px solid #e53935;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+}
+
+th{
+
+background:#1565c0;
+
+color:white;
+
+padding:15px;
+
+}
+
+td{
+
+padding:12px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+.success{
+
+color:green;
+
+font-weight:bold;
+
+}
+
+.failed{
+
+color:red;
+
+font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>CISP Security Assessment Report</h1>
+
+</header>
+
+<div class="container">
+
+
+<div class="cards">
+
+<div class="card">
+<h2>8</h2>
+<p>Total Modules</p>
+</div>
+
+<div class="card green">
+<h2>2</h2>
+<p>Successful</p>
+</div>
+
+<div class="card red">
+<h2>6</h2>
+<p>Failed</p>
+</div>
+
+</div>
+
+
+<table>
+
+<tr>
+
+<th>Module</th>
+
+<th>Status</th>
+
+<th>Execution Time</th>
+
+<th>Message</th>
+
+</tr>
+
+
+<tr>
+<td>WHOIS Lookup</td>
+<td class="success">SUCCESS</td>
+<td>1.625s</td>
+<td>WHOIS Lookup completed successfully.</td>
+</tr>
+
+<tr>
+<td>DNS Lookup</td>
+<td class="success">SUCCESS</td>
+<td>0.077s</td>
+<td>DNS Lookup completed successfully.</td>
+</tr>
+
+<tr>
+<td>SSL Scanner</td>
+<td class="failed">FAILED</td>
+<td>0.000s</td>
+<td>SSL Scanner failed.</td>
+</tr>
+
+<tr>
+<td>HTTP Methods Scanner</td>
+<td class="failed">FAILED</td>
+<td>0.000s</td>
+<td>HTTP Methods Scanner failed.</td>
+</tr>
+
+<tr>
+<td>Security Headers Analyzer</td>
+<td class="failed">FAILED</td>
+<td>0.000s</td>
+<td>Security Headers Analyzer failed.</td>
+</tr>
+
+<tr>
+<td>Technology Detection</td>
+<td class="failed">FAILED</td>
+<td>0.000s</td>
+<td>Technology Detection failed.</td>
+</tr>
+
+<tr>
+<td>Robots Analyzer</td>
+<td class="failed">FAILED</td>
+<td>0.000s</td>
+<td>Robots Analyzer failed.</td>
+</tr>
+
+<tr>
+<td>Directory Bruteforcer</td>
+<td class="failed">FAILED</td>
+<td>0.000s</td>
+<td>Directory Bruteforcer failed.</td>
+</tr>
+
+
+</table>
+
+</div>
+
+</body>
+
+</html>
