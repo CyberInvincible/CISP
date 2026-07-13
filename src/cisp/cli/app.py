@@ -6,6 +6,18 @@ The CLI is only responsible for interacting with the user.
 Business logic remains inside the Engine and Plugins.
 """
 
+from cisp.cli.wizard import ScanWizard
+from cisp.cli.profile_mapper import ProfileMapper
+
+from cisp.pipelines.web import WebPipeline
+from cisp.pipelines.infrastructure import InfrastructurePipeline
+from cisp.pipelines.full import FullPipeline
+from cisp.pipelines.recon import ReconPipeline
+from cisp.pipelines.runner import PipelineRunner
+
+from cisp.reporting.aggregator import ResultAggregator
+from cisp.reporting.html_report import HTMLReport
+
 from cisp.cli.banner import show_banner
 from cisp.cli.menu import MainMenu
 from cisp.core.engine import Engine
@@ -55,9 +67,53 @@ class CLIApplication:
         
         show_banner()
 
-        menu = MainMenu(
-            self.registry,
-            self.engine,
+        wizard = ScanWizard()
+
+        selection = wizard.start()
+
+        if selection is None:
+            print("\nThank you for using CISP.")
+            return
+
+        profile = ProfileMapper.get_profile(
+            selection["profile"]
         )
 
-        menu.run()
+        target = selection["target"]
+
+        if profile == "quick":
+            pipeline = ReconPipeline(self.engine)
+
+        elif profile == "web":
+            pipeline = WebPipeline(self.engine)
+
+        elif profile == "infrastructure":
+            pipeline = InfrastructurePipeline(self.engine)
+
+        elif profile == "full":
+            pipeline = FullPipeline(self.engine)
+
+        else:
+            menu = MainMenu(
+                self.registry,
+                self.engine,
+            )
+            menu.run()
+            return
+
+        runner = PipelineRunner(pipeline)
+
+        results = runner.run(target)
+
+        aggregator = ResultAggregator()
+
+        report = aggregator.aggregate(results)
+
+        print("\nModules being sent to HTML Report:")
+
+        for module in results:
+            print("-", module)
+
+        HTMLReport().generate(results)
+
+        print("\nHTML report generated successfully.")

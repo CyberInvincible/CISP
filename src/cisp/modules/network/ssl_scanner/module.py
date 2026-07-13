@@ -3,6 +3,7 @@ from __future__ import annotations
 import socket
 import ssl
 from datetime import datetime, UTC
+from urllib.parse import urlparse
 
 from cisp.core.base_module import BaseModule
 
@@ -20,9 +21,25 @@ class SSLScannerPlugin(BaseModule):
         if not host:
             raise ValueError("Host cannot be empty.")
 
+        if host.startswith(("http://", "https://")):
+            parsed = urlparse(host)
+
+            if not parsed.hostname:
+                raise ValueError("Invalid URL.")
+
+        return True
+
     def execute(self, context, host: str):
 
         port = 443
+
+        if host.startswith(("http://", "https://")):
+            parsed = urlparse(host)
+
+            if parsed.hostname is None:
+                raise ValueError("Invalid URL.")
+
+            host = parsed.hostname
 
         ssl_context = ssl.create_default_context()
 

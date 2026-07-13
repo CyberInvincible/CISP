@@ -23,77 +23,77 @@
             },
             "warnings": [],
             "errors": [],
-            "execution_time": 1.771227000048384,
-            "timestamp": "2026-07-10T13:18:02.416563+00:00"
+            "execution_time": 1.8247136001009494,
+            "timestamp": "2026-07-13T10:15:43.034537+00:00"
         },
         "DNS Lookup": {
             "success": true,
             "message": "DNS Lookup completed successfully.",
             "data": {
                 "A": [
-                    "104.18.33.45",
-                    "172.64.154.211"
+                    "172.64.154.211",
+                    "104.18.33.45"
                 ],
                 "AAAA": [],
                 "MX": [
                     "5 alt2.aspmx.l.google.com.",
+                    "5 alt1.aspmx.l.google.com.",
                     "1 aspmx.l.google.com.",
                     "10 alt3.aspmx.l.google.com.",
-                    "10 alt4.aspmx.l.google.com.",
-                    "5 alt1.aspmx.l.google.com."
+                    "10 alt4.aspmx.l.google.com."
                 ],
                 "NS": [
-                    "ns3-02.azure-dns.org.",
-                    "ns2-02.azure-dns.net.",
                     "ns4-02.azure-dns.info.",
-                    "ns1-02.azure-dns.com."
+                    "ns1-02.azure-dns.com.",
+                    "ns2-02.azure-dns.net.",
+                    "ns3-02.azure-dns.org."
                 ],
                 "TXT": [
-                    "\"twilio-domain-verification=c7745eae53aa58c5874d7a8508c510bc\"",
-                    "\"wrike-verification=NjMwNjgwMjo0NmU2YjQ1NjgzNGJkN2M3MmYwNWUyMTNhOWUwOGY0OTQxYjBlNWJmZTEwYjYzOWU5MDNlMDlkYzAxNGZlZDRh\"",
-                    "\"autodesk-domain-verification=C3oU6DmT-SfRlU0htRMR\"",
-                    "\"jamf-site-verification=2ysWIpJrXkO40kW1SNc8Qg\"",
-                    "\"MS=ms50231473\"",
-                    "\"parsec-domain-verification=td_30Hu4AtBG9pDT9HTJCFK42bxN3q\"",
-                    "\"google-site-verification=dU3pms6hgznfQnTCxkcq6P4jGjd8LMra0v429l4oElA\"",
-                    "\"dtm-domain-verification=yaoiU11N90j1RKR3IObEMhQO8WHP8K4zTGmCYlUIr6k\"",
-                    "\"uber-domain-verification=faf07776-4ec9-4fd0-9ac5-2a6f8c514318\"",
-                    "\"dropbox-domain-verification=mra9n6toqbqj\"",
-                    "\"TAILSCALE-FAWYbK3UOL8Tf83rkJoc\"",
-                    "\"apple-domain-verification=EgaXvYuVUgRwJTk3\"",
-                    "\"v=spf1 include:_spf.google.com include:spf.protection.outlook.com include:8050860.spf04.hubspotemail.net include:mktomail.com include:spf_c.oraclecloud.com -all\"",
-                    "\"openai-domain-verification=dv-un30neQJyISDPkxgKgArFtEc\"",
-                    "\"mgverify=22d53df776e7e9198e72a000c4056f5ba1624b8f2a50e3d0f4925fcea15bb5d4\"",
-                    "\"notion-domain-verification=GZFdn3LQ77QuL3XKYZT6BmKDkFfmbiAorjzDIdvLRd6\"",
-                    "\"smartsheet-site-validation=b4J2lcr0i94a3_8qW2jIQxWjyqlGUmF1\"",
-                    "\"docker-verification=e315e0c2-f866-4bec-ac0c-844fa287bbec\"",
-                    "\"hiAwXiKX20HcM9FtFK90WRyUFLSV1w\"",
-                    "\"ms-domain-verification=a14381d7-1e61-4cbf-97fa-4ac14336f0cf\"",
-                    "\"hibp-verify=dweb_bngtm5m5asvzv8o0xxyy9pxb\"",
-                    "\"central-10085\"",
-                    "\"uber-domain-verification=77dfb7a6-1534-4c1b-a4e2-ba173fa8e9a3\"",
-                    "\"calendly-site-verification=fBZScJDPHrHKIWIb9dKdryZqPPcCkxGISR8z5xSdX\"",
-                    "\"airtable-verification=dea7eaaa4d90e623ec30a9b2fa12ca5f\"",
-                    "\"onetrust-domain-verification=6bfaeb2a9cdf438bad3b7b30e745f3ed\"",
-                    "\"stripe-verification=b1d42b65d1782470604a6dbb360e9dfe8bd7426974e5110605e86b22d945288d\"",
-                    "\"google-site-verification=BDCE3pqO3BG5T5jWaEmQl10f5gqe3GAXgjyV0pmA5Jo\"",
-                    "\"figma-domain-verification=274542735efe890a700405d9916de07a971b531a0d1595c237b09d68770febf4-1762810003\"",
-                    "\"linear-domain-verification=83vxugur897f\"",
-                    "\"atlassian-domain-verification=Q2BUDjXbr3zZaNROQ1MyCjvItM31fbzhL/GR5YEn96BAAyQzrQfkxaxxWC2qj/s5\"",
-                    "\"airalo-domain-verification=xFzIMCLQ9JTlUFK\"",
-                    "\"postman-domain-verification=dc3e890ca92455e54d07dcec9ea8404fc401b0a5a900dfb759062cd1dc68b28f7bc7db58254e4936ff8a9303f38cb9719e1af16757b09e0067c635510c90cde8\"",
                     "\"canva-site-verification=3pgWM7c4EwmBo5rsy9b2Mg\"",
-                    "\"google-site-verification=3uGPpoo5B2gXoFNwT4pfAJwH-1gjVj-fLqVSE6rCXGk\"",
-                    "\"hubspot-developer-verification=NDFmMGNmMTYtZWYxNS00YTNlLWFkM2ItMjEwYzhmYTk0NTNi\"",
+                    "\"atlassian-domain-verification=Q2BUDjXbr3zZaNROQ1MyCjvItM31fbzhL/GR5YEn96BAAyQzrQfkxaxxWC2qj/s5\"",
+                    "\"smartsheet-site-validation=b4J2lcr0i94a3_8qW2jIQxWjyqlGUmF1\"",
                     "\"pylon-domain-verification-na3cfk=bYVknYT5uGxjut616RQY8fCHj\"",
-                    "\"onetrust-domain-verification=7acf44f596f84700bc82bfaaeb9b388c\"",
-                    "\"ZOOM_verify_Ji3VecODDwjBgU1GccqGAC\"",
-                    "\"tukj3psjdk\"",
-                    "\"google-site-verification=9sG4lDm5hmXEmnwpVGkId_ftzq-b84TYi0rwy9J-f9s\"",
                     "\"atlassian-domain-verification=xdHUKPdNqeX/XU/VMyGIRWfzqvhwWmcHR1DhX2J3JllvjIY3A0Aw9Ctst0DXGIgt\"",
+                    "\"postman-domain-verification=dc3e890ca92455e54d07dcec9ea8404fc401b0a5a900dfb759062cd1dc68b28f7bc7db58254e4936ff8a9303f38cb9719e1af16757b09e0067c635510c90cde8\"",
+                    "\"ms-domain-verification=a14381d7-1e61-4cbf-97fa-4ac14336f0cf\"",
+                    "\"dropbox-domain-verification=mra9n6toqbqj\"",
+                    "\"hubspot-developer-verification=NDFmMGNmMTYtZWYxNS00YTNlLWFkM2ItMjEwYzhmYTk0NTNi\"",
+                    "\"google-site-verification=dU3pms6hgznfQnTCxkcq6P4jGjd8LMra0v429l4oElA\"",
+                    "\"uber-domain-verification=77dfb7a6-1534-4c1b-a4e2-ba173fa8e9a3\"",
+                    "\"google-site-verification=BDCE3pqO3BG5T5jWaEmQl10f5gqe3GAXgjyV0pmA5Jo\"",
+                    "\"wrike-verification=NjMwNjgwMjo0NmU2YjQ1NjgzNGJkN2M3MmYwNWUyMTNhOWUwOGY0OTQxYjBlNWJmZTEwYjYzOWU5MDNlMDlkYzAxNGZlZDRh\"",
+                    "\"hiAwXiKX20HcM9FtFK90WRyUFLSV1w\"",
+                    "\"stripe-verification=b1d42b65d1782470604a6dbb360e9dfe8bd7426974e5110605e86b22d945288d\"",
+                    "\"hibp-verify=dweb_bngtm5m5asvzv8o0xxyy9pxb\"",
+                    "\"dtm-domain-verification=yaoiU11N90j1RKR3IObEMhQO8WHP8K4zTGmCYlUIr6k\"",
+                    "\"openai-domain-verification=dv-un30neQJyISDPkxgKgArFtEc\"",
+                    "\"ZOOM_verify_Ji3VecODDwjBgU1GccqGAC\"",
+                    "\"onetrust-domain-verification=7acf44f596f84700bc82bfaaeb9b388c\"",
+                    "\"apple-domain-verification=EgaXvYuVUgRwJTk3\"",
                     "\"miro-verification=0ee819554f4ff63f853affdf30d1cf76a15c6846\"",
+                    "\"onetrust-domain-verification=6bfaeb2a9cdf438bad3b7b30e745f3ed\"",
+                    "\"airtable-verification=dea7eaaa4d90e623ec30a9b2fa12ca5f\"",
+                    "\"docker-verification=e315e0c2-f866-4bec-ac0c-844fa287bbec\"",
+                    "\"notion-domain-verification=GZFdn3LQ77QuL3XKYZT6BmKDkFfmbiAorjzDIdvLRd6\"",
+                    "\"TAILSCALE-FAWYbK3UOL8Tf83rkJoc\"",
                     "\"box-domain-verification=e2ecedffb7ea6f02e5f7a4afdbb83e2892f81db3acd85ff600633ad76096d459\"",
-                    "\"whimsical=a3593eda7e8523a75b01fd953cac04549faefe0c\""
+                    "\"parsec-domain-verification=td_30Hu4AtBG9pDT9HTJCFK42bxN3q\"",
+                    "\"autodesk-domain-verification=C3oU6DmT-SfRlU0htRMR\"",
+                    "\"calendly-site-verification=fBZScJDPHrHKIWIb9dKdryZqPPcCkxGISR8z5xSdX\"",
+                    "\"tukj3psjdk\"",
+                    "\"MS=ms50231473\"",
+                    "\"google-site-verification=3uGPpoo5B2gXoFNwT4pfAJwH-1gjVj-fLqVSE6rCXGk\"",
+                    "\"mgverify=22d53df776e7e9198e72a000c4056f5ba1624b8f2a50e3d0f4925fcea15bb5d4\"",
+                    "\"twilio-domain-verification=c7745eae53aa58c5874d7a8508c510bc\"",
+                    "\"central-10085\"",
+                    "\"uber-domain-verification=faf07776-4ec9-4fd0-9ac5-2a6f8c514318\"",
+                    "\"linear-domain-verification=83vxugur897f\"",
+                    "\"figma-domain-verification=274542735efe890a700405d9916de07a971b531a0d1595c237b09d68770febf4-1762810003\"",
+                    "\"airalo-domain-verification=xFzIMCLQ9JTlUFK\"",
+                    "\"whimsical=a3593eda7e8523a75b01fd953cac04549faefe0c\"",
+                    "\"jamf-site-verification=2ysWIpJrXkO40kW1SNc8Qg\"",
+                    "\"google-site-verification=9sG4lDm5hmXEmnwpVGkId_ftzq-b84TYi0rwy9J-f9s\"",
+                    "\"v=spf1 include:_spf.google.com include:spf.protection.outlook.com include:8050860.spf04.hubspotemail.net include:mktomail.com include:spf_c.oraclecloud.com -all\""
                 ],
                 "CNAME": [],
                 "SOA": [
@@ -102,8 +102,8 @@
             },
             "warnings": [],
             "errors": [],
-            "execution_time": 0.0766565001104027,
-            "timestamp": "2026-07-10T13:18:02.493235+00:00"
+            "execution_time": 0.16708369995467365,
+            "timestamp": "2026-07-13T10:15:43.201641+00:00"
         },
         "SSL Scanner": {
             "success": false,
@@ -113,8 +113,8 @@
             "errors": [
                 "SSLScannerPlugin.validate() got an unexpected keyword argument 'url'"
             ],
-            "execution_time": 4.700152203440666e-06,
-            "timestamp": "2026-07-10T13:18:02.493254+00:00"
+            "execution_time": 5.699926987290382e-06,
+            "timestamp": "2026-07-13T10:15:43.201664+00:00"
         },
         "HTTP Methods Scanner": {
             "success": false,
@@ -124,8 +124,8 @@
             "errors": [
                 "URL must start with http:// or https://"
             ],
-            "execution_time": 4.500150680541992e-06,
-            "timestamp": "2026-07-10T13:18:02.493264+00:00"
+            "execution_time": 5.00003807246685e-06,
+            "timestamp": "2026-07-13T10:15:43.201677+00:00"
         },
         "Security Headers Analyzer": {
             "success": false,
@@ -135,8 +135,8 @@
             "errors": [
                 "URL must start with http:// or https://"
             ],
-            "execution_time": 1.700129359960556e-06,
-            "timestamp": "2026-07-10T13:18:02.493269+00:00"
+            "execution_time": 2.499902620911598e-06,
+            "timestamp": "2026-07-13T10:15:43.201684+00:00"
         },
         "Technology Detection": {
             "success": false,
@@ -146,8 +146,8 @@
             "errors": [
                 "URL must start with http:// or https://"
             ],
-            "execution_time": 1.600012183189392e-06,
-            "timestamp": "2026-07-10T13:18:02.493274+00:00"
+            "execution_time": 1.200009137392044e-06,
+            "timestamp": "2026-07-13T10:15:43.201689+00:00"
         },
         "Robots Analyzer": {
             "success": false,
@@ -157,8 +157,8 @@
             "errors": [
                 "URL must start with http:// or https://"
             ],
-            "execution_time": 6.800051778554916e-06,
-            "timestamp": "2026-07-10T13:18:02.493284+00:00"
+            "execution_time": 1.800013706088066e-06,
+            "timestamp": "2026-07-13T10:15:43.201695+00:00"
         },
         "Directory Bruteforcer": {
             "success": false,
@@ -168,14 +168,14 @@
             "errors": [
                 "URL must start with http:// or https://"
             ],
-            "execution_time": 1.90013088285923e-06,
-            "timestamp": "2026-07-10T13:18:02.493289+00:00"
+            "execution_time": 2.299901098012924e-06,
+            "timestamp": "2026-07-13T10:15:43.201701+00:00"
         }
     },
     "summary": {
         "total_modules": 8,
         "successful": 2,
         "failed": 6,
-        "execution_time": 1.8479047007858753
+        "execution_time": 1.9918157998472452
     }
 }
